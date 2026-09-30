@@ -1,5 +1,6 @@
 ﻿CalculatorApp();
-void CalculatorApp();
+
+void CalculatorApp()
 {
     int firstNumber = 0;
     int secondNumber = 0;
@@ -7,10 +8,10 @@ void CalculatorApp();
     int choice = 0;
 
     Console.WriteLine("Type in the first number followed by Enter key");
-    int firstNumber = Convert.ToInt32(Console.ReadLine());
+    firstNumber = Convert.ToInt32(Console.ReadLine());
 
     Console.WriteLine("Type in the second number followed by Enter key");
-    int secondNumber = Convert.ToInt32(Console.ReadLine());
+    secondNumber = Convert.ToInt32(Console.ReadLine());
 
     Console.WriteLine("Choose an option from the list below:");
     Console.WriteLine("1- Add");
@@ -19,7 +20,7 @@ void CalculatorApp();
     Console.WriteLine("4- Divide");
 
     choice = Convert.ToInt32(Console.ReadLine());
-    
+
     if (choice == 1)
     {
         result = firstNumber + secondNumber;
@@ -28,7 +29,7 @@ void CalculatorApp();
     else if (choice == 2)
     {
         result = firstNumber - secondNumber;
-        Console.WriteLine($"Subtracting {firstNumber} from {secondNumber} equals {result}");
+        Console.WriteLine($"Subtracting {secondNumber} from {firstNumber} equals {result}");
     }
     else if (choice == 3)
     {
@@ -44,7 +45,4 @@ void CalculatorApp();
     {
         Console.WriteLine("You did not select a valid number between 1 and 4");
     }
-    int result = firstNumber + secondNumber;
-
-    Console.WriteLine("Adding {0} and {1} and give the answer {2}", firstNumber, secondNumber, result);
 }
